@@ -1,0 +1,50 @@
+
+:root{
+	--main-bg-color:cyan;
+	--main-txt-color:black;
+	--container-width:90%;
+	--header-bg-color:gold;
+
+}
+body{
+	
+	color: var(--main-txt-color);
+	margin: 0px;
+
+}
+.container{
+	width: var(--container-width);
+	margin: 20px auto;
+}
+.text{
+	margin: 0px;
+	background-color: var(--header-bg-color);
+}
+.content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	--gap: 25;
+	grid-gap: calc(var(--gap)*1px);
+	align-items: center;
+}
+/*
+Define Box vars
+*/
+
+.box{
+	--box-bg-color:#ddd;
+	--box-main-color:#06c;
+	--box-padding:5px 10px;
+
+}
+.box{
+	background-color: var(--box-bg-color);
+	padding: var(--box-padding);
+	border: 5px dashed var(--box-main-color);
+	box-shadow: 10px 5px 15px var(--box-main-color);
+}
+
+.box p{
+	--box-main-color:#555;
+	color: var(--box-main-color);
+}
